@@ -1,10 +1,19 @@
+let n = 10
+
+for (let i = 0; i <= n; i++) {
+  console.log(i);
+}
+
+
 $(document).ready(function() {
-  //$("form#calculator").submit(function() {
+  $("form#calculator").submit(function(event) {
+    
+    
+    
     event.preventDefault();
 
   });
 });
-
 
 
 

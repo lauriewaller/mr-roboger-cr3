@@ -30,11 +30,11 @@ This website prompts the user to input an arabic numeral. It then returns a rang
 
 **Describe: beepBoop()**
 
-Test: "It should return an array with a 0 if the number 0 is inputted."
-Expect: (beepBoop(0).toEqual([0]);
+* Test: "It should return an array with a 0 if the number 0 is inputted."
+* Expect: (beepBoop(0).toEqual([0]);
 
-Test: "It should return 'Beep!' for the digit 1."
-Expect: (beepBoop(1).toEqual([0, "Beep!"]);
+* Test: "It should return 'Beep!' for the digit 1."
+* Expect: (beepBoop(1).toEqual([0, "Beep!"]);
 
 * Test: "It should return 'Boop!' for the digit 2."
 * Expect: (beepBoop(2).toEqual([0, "Beep!", "Boop!"]);
