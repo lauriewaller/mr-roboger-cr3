@@ -14,7 +14,9 @@ $(document).ready(function() {
     });
 
     let beepBoop = newArray.forEach(function(i) {
-      if (newArray[i].includes("3")) {
+      if (newArray[i] === 0) {
+        $("ul").append([0]);
+      } else if (newArray[i].includes("3")) {
         $("ul").append("<li>'Won't you be my neighbor?'</li>");
       } else if (newArray[i].includes("2")) {
         $("ul").append("<li>'Boop!'</li>"); 
