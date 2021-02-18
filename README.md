@@ -30,23 +30,23 @@ This website prompts the user to input an arabic numeral. It then returns a rang
 
 **Describe: beepBoop()**
 
-* Test: "It should return an array with a 0 if the number 0 is inputted."
-* Expect: (beepBoop(0).toEqual([0]);
+Test: "It should return an array with a 0 if the number 0 is inputted."
+Expect: (beepBoop(0).toEqual([0]);
 
-* Test: "It should return 'Beep!' for the digit 1."
-* Expect: (beepBoop(1).toEqual([0, "Beep!"]);
+Test: "It should return 'Beep!' for the digit 1."
+Expect: (beepBoop(1).toEqual([0, "Beep!"]);
 
-* Test: "It should return 'Boop!' for the digit 2."
-* Expect: (beepBoop(2).toEqual([0, "Beep!", "Boop!"]);
+Test: "It should return 'Boop!' for the digit 2."
+Expect: (beepBoop(2).toEqual([0, "Beep!", "Boop!"]);
 
-* Test: "It should return 'Won't you be my neighbor?' for the digit 3."
-* Expect: (beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);
+Test: "It should return 'Won't you be my neighbor?' for the digit 3."
+Expect: (beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);
 
-* Test: "The rule for the digit 2 should override the rule for the digit 1."
-* Expect: (beepBoop(12).toEqual([0, 1, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, "Beep!", "Boop!"]);
+Test: "The rule for the digit 2 should override the rule for the digit 1."
+Expect: (beepBoop(12).toEqual([0, 1, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, "Beep!", "Boop!"]);
 
-* Test: "The rule for the digit 3 should override the rule for the digits 1 and 2."
-* Expect: (beepBoop(23).toEqual([0, 1, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!," "Boop!", "Boop!", "Won't you be my neighbor?"]);
+Test: "The rule for the digit 3 should override the rule for the digits 1 and 2."
+Expect: (beepBoop(23).toEqual([0, 1, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!," "Boop!", "Boop!", "Won't you be my neighbor?"]);
 
 ## Known Bugs
 
