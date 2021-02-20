@@ -1,26 +1,29 @@
+function inputArray(input) {
+  let array = [];
+  for (let i = 0; i <= input; i++) {
+    array.push(i);
+  } 
+  return array.map(String);
+} 
+  
 $(document).ready(function() {
   $("form#faveNumber").submit(function(event) {  
     event.preventDefault();
 
+    $("ul").empty();
+
     const userInput = $("input#faveNumber").val();
-    let array = [];
 
-    for (let i = 0; i <= userInput; i++) {
-      array.push(i);
-    } 
+    let finalArray = inputArray(userInput);
 
-    let newArray = array.map(function(element){
-      return element.toString()
-    });
-
-    let beepBoop = newArray.forEach(function(i) {
-      if (newArray[i] === 0) {
+    let beepBoop = finalArray.forEach(function(i) {
+      if (finalArray[i] === 0) {
         $("ul").append([0]);
-      } else if (newArray[i].includes("3")) {
+      } else if (finalArray[i].includes("3")) {
         $("ul").append("<li>'Won't you be my neighbor?'</li>");
-      } else if (newArray[i].includes("2")) {
+      } else if (finalArray[i].includes("2")) {
         $("ul").append("<li>'Boop!'</li>"); 
-      } else if (newArray[i].includes("1")) {
+      } else if (finalArray[i].includes("1")) {
         $("ul").append("<li>'Beep!'</li>");
       } else {  
         $("ul").append(`<li>${i}</li>`);
