@@ -13,7 +13,7 @@
 
 ## Description
 
-This website prompts the user to input an arabic numeral. It then returns a range of numbers from 0 to the input numeral, with the words/sentence "Beep!," "Boop!," and "Won't you be my neighbor?" substituted for the numbers 1, 2, and 3 respectively. 
+This website prompts the user to input an arabic numeral. It then returns a range of numbers from 0 to the input numeral, with the words/sentence "Beep!," "Boop!," and "Won't you be my neighbor?" substituted for the numbers 1, 2, and 3 respectively. The primary purpose of the site was to practice looping and integrating a UI.
 
 ## Setup/Installation Requirements
 
